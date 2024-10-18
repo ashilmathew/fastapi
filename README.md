@@ -6,16 +6,8 @@ This is a FastAPI application for managing posts and comments with user authenti
 
 - [Features](#features)
 - [Technologies Used](#technologies-used)
-- [Installation](#installation)
+- [Installation](#installation)\
 - [Application Structure](#application-structure)
-- [Usage](#usage)
-  - [Normal Users](#normal-users)
-  - [Admin Users](#admin-users)
-- [API Endpoints](#api-endpoints)
-- [Dependencies](#dependencies)
-- [Deployment](#deployment)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Features
 
@@ -51,5 +43,24 @@ This is a FastAPI application for managing posts and comments with user authenti
       uvicorn main:app --reload
 6. **Access the application**
       http://127.0.0.1:8000/docs
+
+
+##Application Structure
+
+│
+├── main.py               # Entry point of the FastAPI application
+├── database.py           # Database setup and session management
+├── models/               # Database models
+│   ├── user_model.py     # User model
+│   ├── post_model.py     # Post model
+│   └── comment_model.py   # Comment model
+├── routes/               # API routes
+│   ├── auth_routes.py    # Authentication routes
+│   ├── post_routes.py    # Post-related routes
+│   └── admin_routes.py   # Admin-specific routes
+├── schemas.py            # Pydantic models for request/response validation
+├── utils.py              # Utility functions (e.g., password hashing)
+├── auth.py               # Authentication logic (JWT token handling)
+└── requirements.txt      # List of dependencies
 
 
