@@ -41,3 +41,15 @@ This is a FastAPI application for managing posts and comments with user authenti
    ```bash
    git clone https://github.com/your-username/your-repo-name.git
    cd your-repo-name
+2. **Create a virtual environment**
+      python -m venv venv
+3. **Activate the virtual enviornment**
+     venv\Scripts\activate
+4.  **install the dependencies**
+       pip install -r requirements.txt
+5.  **run the app**
+      uvicorn main:app --reload
+6. **Access the application**
+      http://127.0.0.1:8000/docs
+
+
