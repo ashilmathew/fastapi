@@ -30,8 +30,8 @@ This is a FastAPI application for managing posts and comments with user authenti
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/your-username/your-repo-name.git
-   cd your-repo-name
+   git clone https://github.com/ashilmathew/fastapi.git
+   cd fastapi
 2. **Create a virtual environment**
       python -m venv venv
 3. **Activate the virtual enviornment**
